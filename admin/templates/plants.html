@@ -1,0 +1,102 @@
+{% extends "admin.html" %}
+
+{% block content %}
+<h1>Plant Suggestions  
+    <form class = "bt" action="/create_plant/" method="">
+    {% csrf_token %}
+        <button type="submit" 
+        style="font-size: 18px;
+        border: none;
+        background: none; 
+        cursor: pointer;
+        outline: none;">
+        <i class="fas fa-plus" 
+        style="color: green; 
+        font-size: 26px; 
+        padding-left: 30px;"></i>
+        </button>
+    </form>
+</h1>
+ <div> <br></div>
+
+    <table border= 1 id="table" class="table table-striped table-bordered" style="width:100%; border: 1px solid black;">
+        <thead style="background-color: grey; color: white;">
+            <tr>
+                <th>Plant</th>
+                <th>Fertlizer</th>
+                <th>Soil Type</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Moisture</th>
+                <th>Nitrogen</th>
+                <th>Phosphorus</th>
+                <th>Potassium</th>
+                <th>Created At</th>
+                <th>Updated At</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center; border: 1px solid black;">
+            {% for plant in plant_data %}
+            <tr id="{{ plant.id }}">
+                <td>{{ plant.name }}</td>
+                <td>{{ plant.fertilizer }}</td>
+                <td>{{ plant.soil }}</td>
+                <td>{{ plant.temperature }}</td>
+                <td>{{ plant.humidity }}</td>
+                <td>{{ plant.moisture }}</td>
+                <td>{{ plant.nitrogen }}</td>
+                <td>{{ plant.phosphorus }}</td>
+                <td>{{ plant.potassium }}</td>
+                <td>{{ plant.createdAt }}</td>
+                <td>{{ plant.updatedAt }}</td>
+                <td>
+                    <form action="/edit_plant/" method="POST">
+                        {% csrf_token %}
+                        <input type="text" name="plant_id" value="{{ plant.id }}" hidden >
+                        <button type="submit"
+                        style="border-radius: 50%; 
+                        font-size: 18px;
+                        padding-right: 5px
+                        text-align: center;
+                        border: none;
+                        background: none; 
+                        cursor: pointer;
+                        outline: none;">
+                        <i class="fas fa-edit" style="color: blue;"></i></button>
+                    </form>
+                    <br>
+                    <form action="/delete_plant/" method="POST">
+                        {% csrf_token %}
+                        <input type="text" name="plant_id" value="{{ plant.id }}" hidden >
+                        <button type="submit"
+                        style="font-size: 18px;
+                        border: none;
+                        background: none; 
+                        cursor: pointer;
+                        outline: none;">
+                        <i class="fas fa-trash-alt" style="color: red;"></i></button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot style="background-color: grey; color: white;">
+            <tr>
+                <th>Plant</th>
+                <th>Fertlizer</th>
+                <th>Soil Type</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Moisture</th>
+                <th>Nitrogen</th>
+                <th>Phosphorus</th>
+                <th>Potassium</th>
+                <th>Created At</th>
+                <th>Updated At</th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+
+{% endblock content %}

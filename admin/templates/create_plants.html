@@ -1,0 +1,64 @@
+{% extends "admin.html" %}
+
+{% block content %}
+<div class="form_background">
+    <form action="/create_plant_view/" method="post">
+        {% csrf_token %}
+        <h1>Plants Data Entry</h1>
+        <div>
+            
+        </div>
+        <div>
+        <label for="plant">Plant</label>
+        <input type="text" placeholder="" id="plant" name="plant" value="" required >
+        </div>
+        <div>
+        <label for="fertilizer">Fertlizer</label>
+        <input type="text" id="fertilizer" name="fertilizer" value="" required>
+        </div>
+        
+        <div>
+        <label for="soil">Soil Type</label>
+        <input type="text" id="soil" name="soil" value="" required>
+        </div>
+        
+        <div>
+        <label for="temperature">Temperature</label>
+        <input type="text" id="temperature" name="temperature" value="" required>
+        </div>
+        
+        <div>
+        <label for="humidity">Humidity</label>
+        <input type="text" id="humidity" name="humidity" value="" required>
+        </div>
+        
+        <div>
+        <label for="moisture">Moisture</label>
+        <input type="text" id="moisture" name="moisture" value="" required>
+        </div>
+        
+        <div>
+        <label for="nitrogen">Nitrogen</label>
+        <input type="text" id="nitrogen" name="nitrogen" value="" required>
+        </div>
+        
+        <div>
+        <label for="phosphorus">Phosphorus</label>
+        <input type="text" id="phosphorus" name="phosphorus" value="" required>
+        </div>
+        
+        <div>
+            <label for="potassium">Potassium</label>
+            <input type="text" id="potassium" name="potassium" value="" required>
+        </div>
+        
+        <div>
+        </div>
+        
+        <button type="submit"><i class="fa-solid fa-database"></i>Save</button>
+  
+    </form>
+
+    
+</div>
+{% endblock content %}

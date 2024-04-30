@@ -1,0 +1,58 @@
+{% extends "admin.html" %}
+
+{% block content %}
+<div class="form_background">
+    <form action="/update_fertilizer/" method="post">
+        {% csrf_token %}
+        <h1>Plants Data Entry</h1>
+        
+        {% for fertilizer in fertilizer_data %}
+        <input type="hidden" name="fertilizer_id" value="{{ fertilizer.id }}" hidden >
+        <div>
+        </div>
+        <div>
+        <label for="fertilizer">Plant</label>
+        <input type="text" placeholder="" id="fertilizer" name="fertilizer" value="{{ fertilizer.name }}" required >
+        </div>
+        <div>
+        <label for="crop">Crop Type</label>
+        <input type="text" id="crop" name="crop" value="{{ fertilizer.crop }}" required>
+        </div>
+        <div>
+        <label for="soil">Soil Type</label>
+        <input type="text" id="soil" name="soil" value="{{ fertilizer.soil }}" required>
+        </div>
+        <div>
+        <label for="temperature">Temperature</label>
+        <input type="text" id="temperature" name="temperature" value="{{ fertilizer.temperature }}" required>
+        </div>
+        <div>
+        <label for="humidity">Humidity</label>
+        <input type="text" id="humidity" name="humidity" value="{{ fertilizer.humidity }}" required>
+        </div>
+        <div>
+        <label for="moisture">Moisture</label>
+        <input type="text" id="moisture" name="moisture" value="{{ fertilizer.moisture }}" required>
+        </div>
+        <div>
+        <label for="nitrogen">Nitrogen</label>
+        <input type="text" id="nitrogen" name="nitrogen" value="{{ fertilizer.nitrogen }}" required>
+        </div>
+        <div>
+        <label for="phosphorus">Phosphorus</label>
+        <input type="text" id="phosphorus" name="phosphorus" value="{{ fertilizer.phosphorus }}" required>
+        </div>
+        <div>
+        <label for="potassium">Potassium</label>
+        <input type="text" id="potassium" name="potassium" value="{{ fertilizer.potassium }}" required>
+        </div>
+        <div>  
+        </div>
+        
+        <button type="submit"><i class="fa-solid fa-database"></i>Save</button>
+        {% endfor %}
+    </form>
+
+    
+</div>
+{% endblock content %}

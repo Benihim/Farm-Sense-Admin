@@ -1,0 +1,64 @@
+{% extends "admin.html" %}
+
+{% block content %}
+<div class="form_background">
+    <form action="/create_device_view/" method="post">
+        {% csrf_token %}
+        <h1>Devices Data Entry</h1>
+        <div>
+            
+        </div>
+        <div>
+        <label for="device">Device</label>
+        <input type="text" placeholder="" id="device" name="device" value="" required >
+        </div>
+        <div>
+        <label for="geolocation">Geo Location</label>
+        <input type="text" id="geolocation" name="geolocation" value="" required>
+        </div>
+        
+        <div>
+        <label for="mac_address">Mac Address</label>
+        <input type="text" id="mac_address" name="mac_address" value="" required>
+        </div>
+        
+        <div>
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" value="" required>
+        </div>
+
+        <div>
+        <label for="temperature">Temperature</label>
+        <input type="text" id="temperature" name="temperature" value="" required>
+        </div>
+    
+        <div>
+        <label for="humidity">Humidity</label>
+        <input type="text" id="humidity" name="humidity" value="" required>
+        </div>
+        
+        <div>
+        <label for="moisture">Moisture</label>
+        <input type="text" id="moisture" name="moisture" value="" required>
+        </div>
+        
+        <div>
+        <label for="rainfall">Rainfall</label>
+        <input type="text" id="rainfall" name="rainfall" value="" required>
+        </div>
+        
+        <div>
+        <label for="status">Status</label>
+        <input type="text" id="status" name="status" value="" required>
+        </div>
+        
+        <div>
+        </div>
+        
+        <button type="submit"><i class="fa-solid fa-database"></i>Save</button>
+  
+    </form>
+
+    
+</div>
+{% endblock content %}

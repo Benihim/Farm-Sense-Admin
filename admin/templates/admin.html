@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Sense</title>
+    <link rel="icon" href="{% static 'images/logo.png'%}">
+    <link rel="stylesheet" href="{% static 'css/base.css' static %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+<body>
+    <div class="container1">
+        <div class="sidebar">
+            <div class="name">
+                <i class='fas fa-user-circle'></i><h2 style="font-size: 25px;">Admin</h2>
+            </div>
+        <section id="menu">
+            <div class="items"> 
+                <li><i class="fas fa-seedling"></i><a href="/plants/">Plants</a></li>
+                <li><i class="fas fa-shopping-bag"></i><a href="/fertilizers/">Fertlizers</a></li>
+                <li><i class="fas fa-bacterium"></i><a href="/diseases/">Disease</a></li>
+                <li><i class="fas fa-globe"></i><a href="/soils/">Soil</a></li>
+                <li><i class="fas fa-mobile-alt"></i><a href="/devices/">Devices</a></li>
+            </div>
+        </section>
+        <section id="menus" style="margin-top: 140px;">
+            <div class="items">
+                <li><i class="fas fa-cog settings-icon"></i></i><a href="#">Settings</a></li>
+                <li><i class="fas fa-question help-icon"></i><a href="#">Help</a></li>
+                <li><i class="fas fa-sign-out-alt logout-icon"></i><a href="/logout/">Logout</a></li>
+            </div>
+        </section>
+        </div>
+        <div class="content">            
+            {% block content %}
+            {% endblock content %}
+        </div>
+        
+    </div>
+    <!--<script src="{% static 'js/script.js' %}"></script> -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- DataTables JavaScript -->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#table').DataTable();
+        });
+    </script>
+</body>
+</html>

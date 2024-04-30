@@ -1,0 +1,45 @@
+{% extends "admin.html" %}
+
+{% block content %}
+<div class="form_background">
+    <form action="/update_disease/" method="post">
+        {% csrf_token %}
+        <h1>Plants Data Entry</h1>
+        
+        {% for disease in disease_data %}
+
+        <input type="hidden" name="disease_id" value="{{ disease.id }}" hidden >
+        <div>
+        </div>
+        <div>
+        <label for="disease">Disease</label>
+        <input type="text" placeholder="" id="disease" name="disease" value="{{ disease.name }}" required >
+        </div>
+        <div>
+        <label for="cause">Cause</label>
+        <input type="text" id="cause" name="cause" value="{{ disease.cause }}" required>
+        </div>
+        <div>
+        <label for="reference">Reference</label>
+        <input type="text" id="reference" name="reference" value="{{ disease.reference }}" required>
+        </div>
+        <div>
+        <label for="remedies">Remedies</label>
+        <input type="text" id="remedies" name="remedies" value="{{ disease.remedies }}" required>
+        </div>
+        <div>
+        <label for="status">Status</label>
+        <input type="text" id="status" name="status" value="{{ disease.status }}" required>
+        </div>
+        <div>
+        <label for="visibility">Visibility</label>
+        <input type="text" id="visibility" name="visibility" value="{{ disease.visibility }}" required>
+        </div>
+        
+        <button type="submit"><i class="fa-solid fa-database"></i>Save</button>
+        {% endfor %}
+    </form>
+
+    
+</div>
+{% endblock content %}

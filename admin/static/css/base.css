@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    display: inline;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+}
+
+
+/* Style the container */
+.container1 {
+    display: flex; /* Use flexbox layout */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height of viewport */
+}
+
+/* Style the left sidebar */
+.sidebar {
+    flex: 0 0 13%; /* Flex basis of 30% without growing or shrinking */
+    background-color: #566f8b; /* Background color */
+    position: sticky;
+    padding: 20px 0 20px 0; /* Padding */
+    border-right: 1px solid #ccc; /* Border on the right side */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+}
+
+/* Style the main content area */
+.content {
+    flex: 1; /* Flex grow to fill remaining space */
+    background-color: #fff; /* Background color */
+    padding: 20px; /* Padding */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+}
+
+.fas.fa-user-circle{
+    display: inline;
+    padding: 0 10px 0 20px;
+    font-size: 25px; /* Adjust the size of the icon */
+    color: #333; /* Set the color of the icon */
+}
+
+#menu{
+    margin-top: 50px;
+}
+
+#menu .items li{
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover{
+    background: #3a3e48;
+    cursor: pointer;
+
+
+}
+
+
+
+#menu .items li:nth-child{
+    border-left: 0px solid #fff;
+}
+
+#menu .items li i{
+    display: inline;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 10px 0 25px;
+    color: rgb(134, 141, 151);
+}
+
+#menu .items li :hover i,
+#menu .items li :hover a{
+    color: #080909;
+}
+
+#menu .items li a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(213, 215, 216);
+    padding: 10px;
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+#menus{
+    margin-top: 140px;
+
+}
+
+#menus .items li{
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+#menus .items li:hover{
+    background: #253047;
+    cursor: pointer;
+
+}
+
+
+
+#menus .items li:nth-child{
+    border-left: 0px solid #fff;
+}
+
+#menus .items li i{
+    display: inline;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 10px 0 25px;
+    color: rgb(134, 141, 151);
+}
+
+#menus .items li :hover i,
+#menus .items li :hover a{
+    color: #f3f4f6;
+}
+
+#menus .items li a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(213, 215, 216);
+    padding: 10px;
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+h1 .bt{
+    display: inline;
+    padding: none;
+    margin: none;
+    border: none;
+
+}
+/* style for view page 
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+th {
+    background-color: #a09e9e;
+    color: #f3f4f6;
+}
+*/
+
+
+/*Style for the Form Page*/
+
+/*.form_background{
+    width: 430px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 55%;
+}*/
+
+.form_background form {
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 35px 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form_background form > div {
+    flex-basis: 35%;
+    margin: 10px 80px;
+    flex-grow: 1;
+}
+
+.form_background form > div input {
+    width: 100%;
+}
+.form_background form h1{
+    display: block;
+}
+
+.form_background label {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form_background input {
+    color: #f3f4f6;
+    height: 50px;
+    background-color: rgb(57, 57, 59);
+    border-radius: 15px;
+    padding: 0 8px;
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.form_background ::placeholder {
+    color: #e5e8e5;
+}
+
+.form_background button {
+    margin-left: 30%;
+    margin-top: 50px;
+    width: 40%;
+    background-color: #121111;
+    color: #e9e8ea;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+}

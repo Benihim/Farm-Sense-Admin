@@ -1,0 +1,38 @@
+{% extends "admin.html" %}
+
+{% block content %}
+<div class="form_background">
+    <form action="/create_soil_view/" method="post">
+        {% csrf_token %}
+        <h1>Soils Data Entry</h1>
+        <div>
+            
+        </div>
+        
+        <div>
+        <label for="soil">Soil Type</label>
+        <input type="text" id="soil" name="soil" value="" required>
+        </div>
+        <div>
+        </div>
+        <div>
+        <label for="reference">Reference</label>
+        <input type="text" id="reference" name="reference" value="" required>
+        </div>
+        <div>
+        </div>
+        <div>
+        <label for="procedure">Procedure</label>
+        <input type="text" id="procedure" name="procedure" value="" required>
+        </div>
+    
+        <div>
+        </div>
+        
+        <button type="submit"><i class="fa-solid fa-database"></i>Save</button>
+  
+    </form>
+
+    
+</div>
+{% endblock content %}

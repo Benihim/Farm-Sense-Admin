@@ -1,0 +1,58 @@
+{% extends "admin.html" %}
+
+{% block content %}
+<div class="form_background">
+    <form action="/update_plant/" method="post">
+        {% csrf_token %}
+        <h1>Plants Data Entry</h1>
+        
+        {% for plant in plant_data %}
+        <input type="hidden" name="plant_id" value="{{ plant.id }}" hidden >
+        <div>
+        </div>
+        <div>
+        <label for="plant">Plant</label>
+        <input type="text" placeholder="" id="plant" name="plant" value="{{ plant.name }}" required >
+        </div>
+        <div>
+        <label for="fertilizer">Fertlizer</label>
+        <input type="text" id="fertilizer" name="fertilizer" value="{{ plant.fertilizer }}" required>
+        </div>
+        <div>
+        <label for="soil">Soil Type</label>
+        <input type="text" id="soil" name="soil" value="{{ plant.soil }}" required>
+        </div>
+        <div>
+        <label for="temperature">Temperature</label>
+        <input type="text" id="temperature" name="temperature" value="{{ plant.temperature }}" required>
+        </div>
+        <div>
+        <label for="humidity">Humidity</label>
+        <input type="text" id="humidity" name="humidity" value="{{ plant.humidity }}" required>
+        </div>
+        <div>
+        <label for="moisture">Moisture</label>
+        <input type="text" id="moisture" name="moisture" value="{{ plant.moisture }}" required>
+        </div>
+        <div>
+        <label for="nitrogen">Nitrogen</label>
+        <input type="text" id="nitrogen" name="nitrogen" value="{{ plant.nitrogen }}" required>
+        </div>
+        <div>
+        <label for="phosphorus">Phosphorus</label>
+        <input type="text" id="phosphorus" name="phosphorus" value="{{ plant.phosphorus }}" required>
+        </div>
+        <div>
+        <label for="potassium">Potassium</label>
+        <input type="text" id="potassium" name="potassium" value="{{ plant.potassium }}" required>
+        </div>
+        <div>  
+        </div>
+        
+        <button type="submit"><i class="fa-solid fa-database"></i>Save</button>
+        {% endfor %}
+    </form>
+
+    
+</div>
+{% endblock content %}

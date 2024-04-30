@@ -1,0 +1,42 @@
+{% extends "admin.html" %}
+
+{% block content %}
+<div class="form_background">
+    <form action="/create_disease_view/" method="post">
+        {% csrf_token %}
+        <h1>Plants Data Entry</h1>
+
+        <div>
+        </div>
+        <div>
+        <label for="disease">Disease</label>
+        <input type="text" placeholder="" id="disease" name="disease" value="" required >
+        </div>
+        <div>
+        <label for="cause">Cause</label>
+        <input type="text" id="cause" name="cause" value="" required>
+        </div>
+        <div>
+        <label for="reference">Reference</label>
+        <input type="text" id="reference" name="reference" value="" required>
+        </div>
+        <div>
+        <label for="remedies">Remedies</label>
+        <input type="text" id="remedies" name="remedies" value="" required>
+        </div>
+        <div>
+        <label for="status">Status</label>
+        <input type="text" id="status" name="status" value="" required>
+        </div>
+        <div>
+        <label for="visibility">Visibility</label>
+        <input type="text" id="visibility" name="visibility" value="" required>
+        </div>
+        
+        <button type="submit"><i class="fa-solid fa-database"></i>Save</button>
+  
+    </form>
+
+    
+</div>
+{% endblock content %}
