@@ -1,13 +1,13 @@
 {
   "type": "service_account",
   "project_id": "farmsense-project",
-  "private_key_id": "c115d1337de3f58063678d0d70ed21de61a24029",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCa6wJJUzqm51cn\n70jSuMWfdE70xgc2RryQewNi9Cx848tOU+W0Mc3y5V4JtGEUBtZX3YFCUiKPmWtr\n3q2OzPQkTYewBgbF7ynJmV9HIfbPAy1e4UOSKCMyQx2/6W0wguwv6uPO+W1ebiGA\nKX/cFKk7hbDctvZv5UXgfsA+o46/x93YALBF12ezDLH8q6tzt4/7j3LAeVSyebUb\nSpIz2HVcVORk5+5uDAzg512FimAFSewIyv7mGvSfhyMnnBxjqQ34jz7lVjNcLk3b\nrbqAcUHUDO2h6fho6axMSFWr4HWAFnsaZ2xcD14uLRSr1bEWxQrAYv+QAeNdba7u\nTV+fHl5lAgMBAAECggEADdT43cooHPnf3slvI51qy7trR1CdGTwEnxPUsBOkGzyN\njP9RrZ6ayFqxZEVuO4cGwU6eOWky+8ZTgIyfy3XCQLGJcW6AUVDy1rSyfJvsOPyM\nIwIS8exShCzY7acuYBv4cajT0UmU+c70f8h0yZYwrAdaTMKrSz9Z11sJ2C3rU3Ul\n6h4B9hRLt+pmP+Tn4hSaP2edFfQuTCk0H22dTirzQj8GX/1nLmeYHU7DLbARNrmq\n2lRPn+8dkkJCihNvb2Mq80M1CTdsIuXleJDRynJYYHhP+/EtMbH4OcvKVla+TpFz\n8zD1Z+JnUCCvCsUdUAY/vO8VYl3uSO6Fu3TUXoHbEQKBgQDIEMDN0iFZFc62mHkA\nXBOJUtW2Uv9IUFCUriD5sTzK934ygxdQ0TKMy0NKIohXjgvknXoYczPdsA5zCEL3\nmBT91IOOfHWzjMDLr+O7vBeQ28kditeQGlOgdp5wcaYXHVh/YWr7AMc1CwxsTA+V\nq9b/LAJgyfGtEKsjYyDz6HX0vQKBgQDGOu0x1OOsvMfDgq87mPFh8SipyZRf4t8c\nrhkivwPQfbg9a50SQdazFC5CT2tXo7gFXPWCct7MgE+5tfT0/B0ouyZA+64bN1pq\n5eL15WWqG/TIDQvWzUcEKrY/shkXQd/50C1k6q3ZAjpll7Ng846HVr4C6xr3xBhU\no5VAijhuyQKBgElmPBZG/Y0dfxVmox4KqfA7v8SAdsAlFys1J0v0RoWAf4AwsCEq\nXw1glXNhb/wPVTWuwNivi1vN978kTM1hsnHdwdZIuzYAcctI4JhDzbGLsSFxityH\njB7W5hIC4Bii35D8QK+N/YfsYcZpsV4MCXjcwJKaBFymPONivvg9VOlRAoGAeKDZ\nQI7FcZN7mL0I96JtmWVQkmnJscP0c5Z6U0ub/Z7TpAS9k6OfDGDGebGsp6tIS3Mz\nL4vJiva2DVPt2bsl32hrsfW2EHfRvOViBLLw9+CFR8uwnalTgvSe7Qnq/N0od/O3\n/AZXfow9jx8OmHv+Ctu9SzdYtNeO2sqlA55ZEwkCgYAdkcBi/zkhPsHFmXMA/YAi\nwxNB9H+bJUxWQC4rFIzWpiC8RXPmYSpDFFW7B7EidhDVv+x+Yd/j3FYjPsowvBVN\nNM9rlJZt/HOUfv1TENKfBZPpGpil0pFwEF2u38fZat5VvQn6weA40Kyvh9k/MtnA\nS3eBuDXDbD395HDvChAY4w==\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "xxxxxxxxx",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nxxxxxxxxxxxxxxxxxxx\n-----END PRIVATE KEY-----\n",
   "client_email": "firebase-adminsdk-h0m64@farmsense-project.iam.gserviceaccount.com",
   "client_id": "107209769800053716806",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "auth_uri": "https://accounts.google.com/xxxxxxxx",
   "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/xxxxxxxxx",
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-h0m64%40farmsense-project.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com"
 }
